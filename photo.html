@@ -1,0 +1,114 @@
+<!Doctype html>
+<html>
+
+<head>
+    <!Doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Wedding website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=геа-8" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+
+    </head>
+
+    <body onload="javascript:preloadThumbnails()" class="gallery story">
+        <!--Header Navigation-->
+        <header>
+            <nav role="navigation" style="text-align:center;" class="navigation">
+                <ul id="js-site-menu" class="site-menu" style="display:inline-block; ">
+
+                    <li><a class="header" href="index.html"> Home</a>
+                    </li>
+                    <li><a class="header" href="story.html"> Our Story</a>
+                    </li>
+                    <li><a class="header" href="photo.html"> Photo</a>
+                    </li>
+                    <li><a class="header" href="wedding.html"> Wedding</a>
+                    </li>
+                    <li><a class="header" href="B_and_G.html"> Bridesmaids & Groomsman </a>
+                    </li>
+                </ul>
+                <a href="#" id="js-menu-icon" class="menu-icon"><img src="menu-icon.svg" />
+                </a>
+            </nav>
+        </header>
+        <div class="viewer">
+            <table>
+                <tr>
+                    <td align="center" colspan="6" id="imageTitleCell" class="title">
+
+                        Gallery
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td align="center" colspan="6" class="picture" <!--style="background-color: maroon" -->
+
+                        <img src="photo/image1.jpg" id="imageLarge" alt="default" />
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <td align="left" colspan="6" class="description" id="imageDescriptionCell">
+
+                        It was an incredible day </td>
+
+                </tr>
+                <tr>
+
+                    <td id="scrollPreviousCell" class="scroll" style="color: Silver" onmouseover="scrollPrevious();" onmouseout="scrollStop();">
+
+                        &lt;&lt; Previous</td>
+
+                    <td>
+
+                        <img id="scrollThumb1" class="smpic" src="photo/image1.jpg" onmouseover="handleThumbOnMouseOver(0);" />
+                    </td>
+
+                    <td>
+
+                        <img id="scrollThumb2" class="smpic" src="photo/image2.jpg" onmouseover="handleThumbOnMouseOver(1);" />
+                    </td>
+
+                    <td>
+
+                        <img id="scrollThumb3" class="smpic" src="photo/image3.jpg" onmouseover="handleThumbOnMouseOver(2);" />
+                    </td>
+
+                    <td>
+
+                        <img id="scrollThumb4" class="smpic" src="photo/image4.jpg" onmouseover="handleThumbOnMouseOver(3);" />
+                    </td>
+
+                    <td id="scrollNextCell" class="scroll" style="color: Black" onmouseover="scrollNext();" onmouseout="scrollStop();">
+
+                        Next &gt;&gt;</td>
+
+                </tr>
+
+            </table>
+        </div>
+        <footer>
+            <p>Posted by: MashAn</p>
+            <a class="email" href="http://mashanworks.com/index.html#contact">Contact me</a>
+        </footer>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/mobile-menu.js"></script>
+        <script src="js/gallery.js"></script>
+
+    </body>
+
+    </html>

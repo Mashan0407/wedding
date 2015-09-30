@@ -1,0 +1,579 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+@font-face {
+    font-family: 'goodfoot';
+    src: url('font/goodfoot.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:after, *:before { border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #333;
+	color: #fff;
+	font-weight: 200;
+	font-size: 1em;
+	font-family: 'Raleway', 'Arial', sans-serif;
+}
+.mobile-screen {
+    display: none;
+}
+.story {
+    background-image: url(paper.png);
+    
+    background-repeat: repeat;
+    width: 100%;
+}
+
+/*************************demo******************************/
+
+a {
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+	font-weight: 600;
+}
+
+a:hover, a:focus {
+	color: darkcyan;
+}
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+/* Header */
+.codrops-header {
+	z-index: 1000;
+	position: absolute;
+	top: 70%;
+	left: 70%;
+	text-align: center;
+	max-width: 500px;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 200;
+	font-size: 3em;
+	line-height: 1;
+}
+
+.codrops-header h1 span {
+	display: block;
+	padding: 0.5em 0 0.6em 0.1em;
+	font-size: 40%;
+	line-height: 1.2;
+	opacity: 0.7;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.69em;
+	line-height: 2.2;
+	position: relative;
+	z-index: 2000;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0.3em 0.7em;
+	text-decoration: none;
+	letter-spacing: 1px;
+	margin: 5px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	padding-top: 2em;
+	font-size: 0.8em;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0.7em 1.1em;
+	outline: none;
+	border: 2px solid #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 165px;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	color: #debcc3;
+	border-color: #debcc3;
+}
+
+
+/**************************nav bar**************************/
+/*nav {
+    position: relative;
+    padding-top: 1em;
+    height: 1.5em;
+    background-color: black;
+    opacity: 0.6;
+    line-height: 0.9375em;
+}*/
+
+.navigation {
+    position: fixed; 
+    height: 1.5em; 
+    opacity: 0.6;
+    z-index: 5;
+    
+}
+
+.nav-home {
+    display: none;
+}
+
+.header {
+    background-color: black;
+    width: 70%;
+    display: block;
+    text-decoration: none;
+    font-size: 1.25em;
+    line-height: 1.3em;
+    padding: 0.5em;
+    color: white;
+    opacity: 0.6;
+    font-weight: 200;
+}
+.navigation:hover {
+    opacity: 0.8;
+}
+.navigation a.header:hover {
+    opacity: 1;
+    color: #debcc3;
+}
+
+.site-menu li {
+    position: relative;
+    line-height: 0.625em;
+    /* must match height of ul */
+}
+
+nav ul li {
+    float: center;
+    display: inline;
+}
+/****************************** "Our Story" page ******************************/
+
+body,
+div {
+    margin: 0 auto;
+    padding: 0;
+    background-image: aliceblue;
+}
+
+.revelation,
+.tablet {
+    display: none;
+}
+
+.revelation p {
+    font-family: "goodfoot";
+    font-size: 20px;
+    padding: 10px;
+}
+
+.name {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.yes {
+    font-size: 25px;
+    color: darkcyan;
+}
+
+#main {
+    padding-top: 0.9375em;
+    <!--15px--> position: relative;
+    max-width: 860px;
+    text-align: center;
+}
+
+#md {
+    position: relative;
+    min-height: 642px;
+    <!--642px--> width: 80%;
+    <!--840px-->
+}
+
+.hframe {
+    width: 3.75em;
+    <!--60px--> padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#left,
+#right {
+    width: 3.75em;
+    <!--60px-->
+}
+
+#top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#left {
+    position: absolute;
+    top: 5.75em;
+    <!--92px--> left: 0px;
+}
+
+#right {
+    position: absolute;
+    top: 5.75em;
+    left: 780px;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+#hoverDiv {
+    display: none;
+    position: absolute;
+    left: 33%;
+    top: 14.3%;
+}
+
+.lovestory {
+    width: 100%;
+    position: absolute;
+    top: 16.5%;
+}
+/****************************** Photo page ********************************/
+
+.viewer table {
+    margin: 0 auto;
+    border: 0;
+    cellpadding: 5;
+    cellspacing: 0;
+    width: 72.916667%;
+    /*700px*/
+}
+
+.title {
+    font-family: goodfoot;
+    font-size: 3em;
+    color: darkcyan;
+}
+
+.picture img {
+    border: 1px solid;
+    max-width: 66.6666667%;
+    /*640px*/
+}
+
+.description {
+    padding: 0 14.28%;
+    color: black;
+    font-size: 1.5625em;
+    font-family: Georgia;
+    line-height: 2.5em;
+    font-style: italic;
+}
+
+.smpic {
+    max-width: 75px;
+}
+
+td img {
+    border: 1px solid;
+}
+/****************************** Wedding page ***********************************/
+
+.map {
+    top: 5em;
+    right: 2em;
+    max-width: 40%;
+    height: 18.75em;
+}
+
+.info h1,
+.info h3 {
+    font-family: goodfoot;
+    font-size: 2em;
+    text-align: center;
+    margin: 1% 1% 0;
+    color: darkcyan;
+}
+
+.info h3 {
+    font-size: 1.5em;
+    color: black;
+}
+
+.info p {
+    line-height: 1.45em;
+    font-size: 1.15em;
+    padding: 1% 11% 0;
+    text-align: center;
+    color: black;
+}
+
+.info p:first-child {
+    margin-top: 1.5%;
+}
+
+.info ul {
+    padding: 0 20%;
+    list-style: inherit;
+    right: 10%;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 1.05em;
+    color: black;
+}
+.info li {
+    line-height: 1.5em;
+}
+/****************************** bridesmaides & groomsman ***********************/
+
+.box {
+    text-align: center;
+}
+
+.content p {
+    
+    line-height: 1.5em;
+}
+
+.box img {
+    width: 95%;
+    
+}
+
+.content {
+    display: inline-block;
+    max-width: 44%;
+    min-width: 450px;
+    padding: 0 2%;
+    margin: 5% auto;
+}
+
+.content img {
+    padding-bottom: 5%;
+}
+
+.content p {
+    color: black;
+}
+/************************************ Tablet *********************************/
+
+@media (max-width: 960px) {
+    .header {
+        font-size: 1.15em;
+        padding-left: 2.25em;
+    }
+    .content {
+        max-width: 94%;
+        min-width: initial;
+    }
+}
+
+@media (max-width: 850px) {
+    .wrappers {
+        display: none;
+    }
+    .tablet {
+        display: block;
+        width: 80%;
+        margin: 2.5em 3em;
+    }
+    .codrops-header h1 {
+        font-size: 2em;
+    }
+    .codrops-header h1 {
+        padding-top: 1em;
+    }
+}
+
+@media (max-width: 780px) {
+    .header {
+        font-size: 1.15em;
+        padding-left: 1.25em;
+    }
+}
+/********************************* mobile menu **********************************/
+/* mobile */
+
+@media (max-width: 615px) {
+    .site-menu {
+        background-color: black;
+        float: none;
+        position: fixed;
+        top: -300px;
+        left: 0;
+        right: 0;
+        padding-top: 56px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .site-menu.expanded {
+        top: 0;
+    }
+}
+/* mobile */
+
+@media (max-width: 615px) {
+    .site-menu li {
+        display: block;
+        margin: 0;
+    }
+    .site-menu a {
+        background-color: black;
+        display: block;
+        padding: 0.5em 1em;
+    }
+    .site-menu a:hover {
+        background-color: rgb(53, 111, 107);
+        color: white;
+        width: 100%;
+    }
+    .map {
+        display: block;
+        width: 70%;
+        top: 15em;
+        right: 3.5em;
+    }
+    .revelation {
+        display: inline;
+    }
+    .revelation img {
+        width: 100%;
+    }
+    .wrappers,
+    .tablet,
+    .scroll {
+        display: none;
+    }
+}
+
+.menu-icon {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 0.4em;
+}
+/* mobile */
+
+@media (max-width: 615px) {
+    .menu-icon {
+        display: block;
+    }
+
+.menu-icon:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.mobile-menu {
+    display: none;
+}
+}
+@media (max-width: 480px) {
+    .full-screen {
+        display: none;
+    }
+    .mobile-screen {
+        display: block;
+    }
+}
+/*****end of mobile menu******/
+/********************************* Footer ************************************/
+
+.email {
+    text-decoration: none;
+    color: white;
+}
+
+.email:hover {
+    color: darkcyan;
+}
+
+footer {
+    text-align: center;
+    font-family: Raleway;
+    font-style: italic;
+    color: white;
+    padding: 0.5em 0;
+    height: 3em;
+    background-color: black;
+    opacity: .6;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+}
+/* Fonts */
+
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+    .codrops-header {
+        top: 50%;
+        left: 50%;
+    }
+}
